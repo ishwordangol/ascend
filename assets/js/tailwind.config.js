@@ -11,7 +11,7 @@ tailwind.config = {
         primarylight: '#ADC4B8',
         bg_gray: '#ebebeb',
         bglight: '#FCF6F3',
-        dark_gray: '#949494',
+        dark_gray: '#585858',
         inputbox: '#363636',
         footer: '#231F20',
         footerborder: '#404040',
