@@ -49,7 +49,7 @@
                     n(t)
                         .find(".nav-menus-wrapper")
                         .prepend(
-                            "<div class='flex justify-between'><a href='/'><img src='./assets/images/ascend-logo.png' class='block lg:hidden h-12 mb-12' alt='Logo'/></a><span class='nav-menus-wrapper-close-button text-white hover:text-primary'>&#10005;</span></div>"
+                            "<div class='flex justify-between'><a href='index.html'><img src='./assets/images/ascend-logo.png' class='block lg:hidden h-12 mb-12' alt='Logo'/></a><span class='nav-menus-wrapper-close-button text-white hover:text-primary'>&#10005;</span></div>"
                         ),
                     "right" == r.settings.offCanvasSide &&
                     n(t)
