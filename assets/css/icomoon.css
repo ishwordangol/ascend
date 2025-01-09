@@ -31,6 +31,9 @@
 .icon-instagram:before {
   content: "\f16d";
 }
+.icon-whatsapp:before {
+  content: "\f232";
+}
 .icon-building:before {
   content: "\e900";
 }
@@ -57,6 +60,9 @@
 }
 .icon-strategy:before {
   content: "\e905";
+}
+.icon-chevron-left:before {
+  content: "\e90c";
 }
 .icon-chevron-right:before {
   content: "\e906";
