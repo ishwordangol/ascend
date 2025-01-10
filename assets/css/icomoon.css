@@ -61,11 +61,17 @@
 .icon-strategy:before {
   content: "\e905";
 }
+.icon-chevron-down:before {
+  content: "\e90d";
+}
 .icon-chevron-left:before {
   content: "\e90c";
 }
 .icon-chevron-right:before {
   content: "\e906";
+}
+.icon-chevron-up:before {
+  content: "\e90e";
 }
 .icon-map-pin:before {
   content: "\e901";
