@@ -1,38 +1,19 @@
 $(window).scrollTop(0);
 
-// Hide Header on on scroll down
-var lastScrollTop = 0;
-var header = $('.header');
-var threshold = 200; // Scroll position threshold
+$(window).scroll(function () {
+    var sticky = $(".header"),
+        scroll = $(window).scrollTop();
 
-$(window).on('scroll', function () {
-    var scrollTop = $(this).scrollTop();
-
-    if (scrollTop > lastScrollTop && scrollTop > threshold) {
-        // Scrolling Down: Hide the header with fade-out and slide-up effects
-        if (!header.hasClass('fadeOutUp')) {
-            header.removeClass('fadeInDown').addClass('fadeOutUp').fadeOut();
-        }
-    } else if (scrollTop < lastScrollTop) {
-        // Scrolling Up: Show the header with fade-in and slide-down effects
-        if (scrollTop > 0 && !header.hasClass('fadeInDown')) {
-            header.removeClass('fadeOutUp').addClass('fadeInDown').fadeIn();
-        }
-    }
-
-    // Remove fadeInDown class at the top of the page
-    if (scrollTop === 0) {
-        header.removeClass('fadeInDown').fadeIn();
-    }
-
-    lastScrollTop = scrollTop;
+    if (scroll >= 200)
+        sticky.addClass("header-fixed animate__animated animate__fadeInDown");
+    else sticky.removeClass("header-fixed animate__animated animate__fadeInDown");
 });
 
 $(".testimonialSlider").slick({
     dots: false,
     arrows: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
     slidesToShow: 1,
@@ -72,7 +53,7 @@ $(".testimonialSlider").slick({
 });
 
 $('.marqueesliderwrapper .slick.marquee').slick({
-    speed: 500,
+    speed: 1500,
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: false,
@@ -92,7 +73,7 @@ $('.marqueesliderwrapper .slick.marquee').slick({
 
 
 $('.marqueesliderwrapper .slick.marquee_rtl').slick({
-    speed: 500,
+    speed: 1500,
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: false,

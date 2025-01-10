@@ -110,38 +110,52 @@ body {
 
 /* header */
 
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
+
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
-
-@keyframes fadeOutUp {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
+.animate__fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
 
-.fadeInDown {
-  animation: fadeInDown 0.5s ease forwards;
-}
-
-.fadeOutUp {
-  animation: fadeOutUp 0.5s ease forwards;
-}
-
-.header.fadeInDown {
+.header.header-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   background: var(--secondary);
+  z-index: 9999;
 }
 
 /* service */
