@@ -205,6 +205,14 @@ nav {
   margin-right: 32px;
 }
 
+.rtl .nav-menu > li:first-child > a {
+  margin-left: 32px;
+}
+
+.rtl .nav-menu > li:last-child > a {
+  margin-right: 0px;
+}
+
 .navigation-portrait .nav-menu > li > a {
   width: 100%;
   height: auto;

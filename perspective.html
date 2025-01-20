@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -91,7 +91,13 @@
                 <button
                   class="flex w-8 h-8 justify-center items-center bg-primary/80 border border-white rounded-full"
                 >
-                  <img src="assets/images/user-E.png" class="" alt="User" />
+                  <img
+                    src="assets/images/arabic-icon.png"
+                    id="toggleLangDir"
+                    class=""
+                    alt="Switch to Arabic (RTL)"
+                    title="Switch to Arabic (RTL)"
+                  />
                 </button>
               </div>
             </div>
@@ -396,7 +402,9 @@
           <div
             class="flex flex-wrap justify-between items-center gap-2 md:gap-1 text-sm"
           >
-            <div class="flex flex-wrap gap-2 space-x-0 sm:space-x-2 sm:gap-0">
+            <div
+              class="flex flex-wrap gap-2 space-x-0 sm:space-x-2 rtl:space-x-reverse rtl:sm:space-x-reverse sm:gap-0"
+            >
               <p>Copyright © 2025</p>
               <span>|</span>
               <a
@@ -424,7 +432,7 @@
               </div>
             </div>
             <div class="socialWrapper">
-              <ul class="flex items-center space-x-2">
+              <ul class="flex items-center space-x-2 rtl:space-x-reverse">
                 <li>
                   <a href="https://www.linkedin.com/" target="_blank"
                     ><div

@@ -11,6 +11,15 @@ body {
   color: #333333;
 }
 
+body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+body.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
 /* btn */
 
 .btn {
@@ -175,6 +184,20 @@ body {
 }
 
 /* slick slider */
+
+[dir="rtl"] .slick-slide {
+  float: left;
+}
+
+.rtl .slick-slider .slick-track,
+.rtl .slick-slider .slick-list {
+  direction: ltr;
+}
+
+.rtl .slick-slider.marquee_rtl .slick-track,
+.rtl .slick-slider.marquee_rtl .slick-list {
+  direction: rtl;
+}
 
 .mainslider .slickbox {
   transform: scale(1);
