@@ -72,6 +72,13 @@ body.ltr {
   position: absolute;
   left: -9999px;
 }
+
+.rtl [type="radio"]:checked,
+.rtl [type="radio"]:not(:checked) {
+  position: absolute;
+  right: -9999px;
+  left: unset;
+}
 [type="radio"]:checked + label,
 [type="radio"]:not(:checked) + label {
   position: relative;
